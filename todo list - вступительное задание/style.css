@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* сделайте элементы списка невыбираемыми */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  width: 20%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+button:hover {
+  background-color: #bbb;
+}
+.even {
+	background: #e9e4a7;
+}
+
+.odd {
+	background: #c2c5c9;
+}
+
+.complete {
+	text-decoration: line-through;
+}
